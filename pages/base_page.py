@@ -1,5 +1,6 @@
 
 from selenium.webdriver.common.by import By
+import time
 
 
 
@@ -13,4 +14,5 @@ class BasePage:
 
 
     def find_element(self, locator):
+        time.sleep(5)
         self.driver.find_element(By.CSS_SELECTOR, locator)
