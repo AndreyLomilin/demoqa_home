@@ -11,3 +11,17 @@ class SwagLabs(BasePage):
             return False
         return True
 
+    def field_name(self, locator):
+        try:
+            self.find_element(locator='#user-name')
+        except NoSuchElementException:
+            return False
+        return True
+
+    def field_password(self, locator):
+        try:
+            self.find_element(locator='#password')
+        except NoSuchElementException:
+            return False
+        return True
+
