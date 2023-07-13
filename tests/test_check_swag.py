@@ -7,3 +7,4 @@ def test(browser):
     assert demo_swag.exist_icon()
     assert demo_swag.field_name()
     assert demo_swag.field_password()
+
